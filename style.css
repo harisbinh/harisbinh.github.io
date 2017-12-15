@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+
+/*-------------------------
+    ABOUT PAGE - FIRST PAGE
+--------------------------*/
+
+
+/* 
+!! CAUTION !!
+SUPER MESSEY CODE BELOW 
+--------------------------*/
+
+header {
+    z-index: 100;
+    background: #fff;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*    BURGER MENU WHEN MOBILE SCREEN
+----------------------------------*/
+
+header .menu-btn {
+    position: absolute;
+}
+
+
+/*    LOGO / BRAND NAME
+--------------------------*/
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    transition: 0.5s ease;
+    padding: 0px 8px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.logo span {
+    font-size: 1rem;
+    color: limegreen;
+}
+
+.logo:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+/*    NAVIGATION ITEMS
+--------------------------*/
+
+header a {
+    text-decoration: none;
+    margin: 0px 30px;
+    color: gray;
+    font-weight: 600;
+    transition: 1s ease;
+    position: relative;
+    top: 30%;
+    left: 50%;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+/*    ABOUT PAGE 
+--------------------------*/
+
+#about-page {
+    height: 100%;
+    background-image: url("https://i.imgur.com/CNDzhNL.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    display: block;
+    position: relative;
+}
+
+
+/*  EVERY PAGE TITLE CSS | LEFT SIDE ROTATED
+--------------------------------------------*/
+
+.page-title {
+    position: absolute;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 5px;
+    top: 40%;
+    left: -20px;
+    transform: rotateZ(270deg) translateY(-50%);
+}
+
+.page-title:after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: #333;
+    right: -45px;
+    top: 10px;
+}
+
+
+/*  ABOUT ME DETAILS POSITION & STYLE
+------------------------------------*/
+
+.about-me-details {
+    width: 400px;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+
+.primary-text {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.about-page .primary-text {
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+.secondary-text {
+    font-size: 1.2rem;
+}
+
+.about-page .secondary-text {
+    text-align: justify;
+}
+
+
+/*/////////////////////////////////
+    PORTFOLIO PAGE - SECOND PAGE
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+#portfolio-page {
+    background: linear-gradient(gray, darkgray);
+    height: 100%;
+    position: relative;
+}
+
+
+/*    PAGE TITLE NAME | LEFT SIDE ROTATED
+--------------------------------------*/
+
+#portfolio-page>.page-title {
+    color: #fff;
+    top: 50%;
+}
+
+#portfolio-page>.page-title:after {
+    background: #fff;
+}
+
+
+/*    APP NAME | AND DETAILS    
+--------------------------------------*/
+
+#portfolio-page>.texts {
+    width: 400px;
+    position: relative;
+    color: #fff;
+    left: 55%;
+    top: 25%;
+}
+
+
+/*    HEADING
+--------------------------------------*/
+
+#portfolio-page>.texts>.primary-text {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#portfolio-page>.texts>.primary-text span {
+    font-size: 1rem;
+}
+
+
+/*    DESCROIPTION
+--------------------------------------*/
+
+#portfolio-page>.texts>.secondary-text {
+    font-size: 1.2rem;
+    color: lightgray;
+}
+
+
+/*   MORE DETAILS ICON
+--------------------------------------*/
+
+#portfolio-page>.texts>a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+#portfolio-page>.texts>a:after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 48%;
+    left: 110%;
+    transition: 0.3s ease;
+}
+
+#portfolio-page>.texts>a:before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    border: 7px solid;
+    border-left-color: #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-clip: padding-box;
+    top: 20%;
+    left: 120%;
+    transition: 0.3s ease;
+}
+
+#portfolio-page>.texts>a:hover:before {
+    left: 135%;
+}
+
+#portfolio-page>.texts>a:hover:after {
+    left: 120%;
+}
+
+
+/*    PORTFOLIO - WORK 1
+--------------------------------------*/
+
+#portfolio-page>.work1 {
+    width: 35%;
+    height: 500px;
+    position: absolute;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-image: url("https://preview.ibb.co/cEiGkm/e8f6612b782a7a5007f187a336e3ed6a_ui_calendar_design_ui_1.jpg");
+    background-size: cover;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+
+/*--------------------------------
+    CONTACT PAGE - LAST PAGE
+---------------------------------*/
+
+#contact-page {
+    height: 100%;
+    position: relative;
+}
+
+
+/*    PAGE TITLE NAME
+--------------------------------------*/
+
+#contact-page>.page-title {
+    top: 50%;
+}
+
+
+/*    CONTACT FORM HEADING BOX
+--------------------------------------*/
+
+.contact-heading-text {
+    background: -webkit-linear-gradient(left, #1DBDB6, #36B8E9);
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/*    CONTACT FORM HEADING | SAY HI..
+--------------------------------------*/
+
+.contact-heading-text p {
+    font-weight: 600;
+    margin-top: 70px;
+    margin-left: 15%;
+    color: #fff;
+}
+
+
+/*    CONTACT FORM
+--------------------------------------*/
+
+#contact-page>.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, minmax(60px));
+    width: 550px;
+    position: relative;
+    top: 40%;
+    left: 15%;
+}
+
+
+/*    ALL FORM INPUT SELECTION
+--------------------------------------*/
+
+.form input[type=text] {
+    margin: 20px 10px;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.form input[type=text]::placeholder {
+    color: lightgray;
+}
+
+
+/*    CSS GRID TO ARANGE LAYOUT- EXPERIMENT
+--------------------------------------*/
+
+.form input[name=message] {
+    grid-column: 1/3;
+}
+
+.form input[name=budget] {
+    position: relative;
+}
+
+
+/*    BUDGET ICON POPUP
+--------------------------------------*/
+
+.form span.budget {
+    position: relative;
+}
+
+.form span.budget:after {
+    content: '$ 20.00';
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background: gray;
+    border-radius: 5px;
+}
+
+.form span.budget:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: gray;
+    position: absolute;
+    top: 20px;
+    left: 230px;
+    transform: rotate(45deg);
+}
+
+
+/*    SOME TAGS | INTERESTS SELECTION
+--------------------------------------*/
+
+.form label {
+    grid-column: 1/3;
+}
+
+.form label[for=interest] {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 10px 15px;
+    color: gray;
+    position: relative;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.form label[for=interest]:before {
+    content: '?';
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    background: gray;
+    position: absolute;
+    left: 70px;
+    top: 2px;
+    border-radius: 50%;
+}
+
+.form label[for=interest]:after {
+    content: 'Starting something new';
+    width: 200px;
+    height: 30px;
+    color: #000;
+    background: #f7f7f7;
+    border-radius: 20px;
+    position: absolute;
+    text-align: center;
+    line-height: 2.2;
+    left: 100px;
+    top: -5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form label[for=interest]:hover:after {
+    background: #ebe1e1;
+}
+
+
+/*    SEND BUTTON
+--------------------------------------*/
+
+.form .send-btn {
+    grid-column: 1/3;
+    justify-self: center;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: #10abd0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form .send-btn:hover {
+    background: #1993b1;
+}
+
+
+/*    PHONE | EMAIL | ADDRESS INFO
+--------------------------------------*/
+
+.form2 {
+    width: 350px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .3)
+}
+
+.form2 p {
+    padding-left: 40px;
+    margin: 40px 0;
+    font-weight: 600;
+}
+
+.form2 p span {
+    display: block;
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.form2 .email span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* SOCIAL MEDIA ICONS AT FOOTER POSITION
+--------------------------------------*/
+
+.social-media {
+    height: 8%;
+    width: 100%;
+    position: relative;
+    bottom: -50%;
+}
+
+.social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-left: 40%;
+    transform: translateX(-50%);
+}
+
+
+/*    FACEBOOK
+--------------------------------------*/
+
+.social-media .fb {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/c/c2/F_icon.svg");
+    background-size: cover;
+    left: 0px;
+}
+
+
+/*    TWIITER
+--------------------------------------*/
+
+.social-media .tt {
+    background: url("https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/twitter-512.png");
+    background-size: cover;
+    left: 60px;
+}
+
+
+/*    DRIBBLE
+--------------------------------------*/
+
+.social-media .dbl {
+    background: url("https://image.flaticon.com/icons/svg/34/34215.svg");
+    background-size: cover;
+    left: 120px;
+}
+
+
+/*    LINKED IN
+--------------------------------------*/
+
+.social-media .li {
+    background: url("https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-linkedin-3.png");
+    background-size: cover;
+    left: 180px;
+}
+
+
+/*/////////////////////////////////////
+    MEDIA QUERY | WIDTH: 1690PX
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media all and (max-width: 1690px) {
+    #portfolio-page>.work1 {
+        width: 40%;
+        height: 80%;
+    }
+}
+
+
+/*/////////////////////////////////////
+    MEDIA QUERY | WIDTH 1280PX
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media all and (max-width: 1280px) {
+    .form2 {
+        width: 20%;
+        left: 75%;
+    }
+    #contact-page>.form {
+        left: 8%;
+        width: 65%;
+    }
+    .form span.budget:after {
+        display: none;
+    }
+    .form span.budget:before {
+        display: none;
+    }
+    .form input[name=budget] {
+        width: 87%;
+    }
+    #portfolio-page>.work1 {
+        width: 40%;
+        height: 70%;
+    }
+    #about-page {
+        background-size: 900px;
+    }
+}
+
+
+/*/////////////////////////////////////
+    MEDIA QUERY | WIDTH 980PX
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media all and (max-width: 980px) {
+    .social-media {
+        top: 80%;
+    }
+    #portfolio-page>.texts {
+        text-align: center;
+    }
+    #contact-page>.form {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .form input[name=name] {
+        grid-column: 1/3;
+    }
+    .form input[name=phone] {
+        grid-column: 1/3;
+    }
+    .form input[name=email] {
+        grid-column: 1/3;
+    }
+    .form input[name=budget] {
+        width: 185%;
+    }
+    header .menu-btn {
+        position: absolute;
+        width: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 90%;
+        cursor: pointer;
+    }
+    header .menu-btn div {
+        height: 5px;
+        background: #000;
+        margin: 5px 0;
+    }
+    header a {
+        display: none;
+    }
+    #contact-page>.form .send-btn {
+        width: 80%;
+    }
+    .form2 {
+        height: 30%;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30%;
+    }
+    .form2 p {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .contact-heading-text {
+        height: 10%;
+    }
+    .contact-heading-text p {
+        margin-top: 1%;
+    }
+    #portfolio-page>.texts {
+        width: 40%;
+    }
+    #portfolio-page>.work1 {
+        width: 40%;
+        height: 40%;
+    }
+    #about-page {
+        background: none;
+    }
+    #about-page .about-me-details {
+        border-radius: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #contact-page>.form {
+        top: 73%;
+        width: 80%;
+    }
+    #portfolio-page .work1 {
+        top: 35%;
+        width: 80%;
+        height: 350px;
+    }
+    #portfolio-page .texts {
+        top: 65%;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #portfolio-page {
+        height: 150%;
+    }
+    #portfolio-page .page-title {
+        transform: rotate(0deg) translateX(-50%);
+        left: 50%;
+        top: 3%;
+    }
+    #contact-page .page-title {
+        transform: rotate(0deg) translateX(-50%);
+        left: 50%;
+        top: 15%;
+        z-index: 11;
+    }
+    #about-page .page-title {
+        transform: rotate(0deg) translateX(-50%);
+        left: 50%;
+        top: 8%;
+    }
+    #about-page .about-me-details .primary-text {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #about-page .about-me-details .secondary-text {
+        margin-top: 80px;
+        text-align: center;
+    }
+}
+
+
+/*/////////////////////////////////////
+    MEDIA QUERY | WIDTH 736PX
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media all and (max-width: 736px) {
+    .form2 p {
+        padding: 0;
+        margin-left: 10%;
+    }
+    .form2 .email {
+        display: block;
+    }
+    .form2 .address {
+        display: block;
+    }
+    .form2 {
+        padding: 20px 0;
+        top: 25%;
+        height: 40%;
+    }
+    #contact-page {
+        height: 120%;
+    }
+    .social-media a {
+        margin-left: 35%;
+    }
+}
